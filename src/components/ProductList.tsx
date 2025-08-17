@@ -20,7 +20,6 @@ const ProductList: React.FC<Props> = ({
 
   return (
     // Product list container
-
     <>
       <div className="w-full h-[60px] pt-[20px] pr-[16px] pb-[12px] pl-[16px]">
         <h2
@@ -42,7 +41,6 @@ const ProductList: React.FC<Props> = ({
                 alt={product.title}
                 className="w-[176px] h-[176px] rounded-[12px] object-cover mb-2"
               />
-
               <div>
                 <p
                   className="text-[16px] line-[24px] font-[500] text-[#1C0D0F]"
@@ -59,7 +57,6 @@ const ProductList: React.FC<Props> = ({
               </div>
             </div>
           </div>
-          // Product image container
         ))}
       </div>
     </>

@@ -36,8 +36,7 @@ const App: React.FC = () => {
         {/* Logo container */}
         <div className="flex items-center justify-center gap-[16px]">
           {/* Logo icon container */}
-
-          <div className="w-[16px] h-[16px]">
+          <div className="w-[16px] h-[16px] flex justify-center items-center">
             <svg
               width="12"
               height="12"
