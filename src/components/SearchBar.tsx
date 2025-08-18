@@ -19,13 +19,7 @@ const SearchBar: React.FC<Props> = ({ onSearch }) => {
       <div className="flex rounded-[12px] w-full h-full">
         {/* Search icon container */}
         <div className="flex items-center bg-[#F2E8E8] pl-[16px] rounded-tl-[12px] rounded-bl-[12px] h-full">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               fillRule="evenodd"
               clipRule="evenodd"

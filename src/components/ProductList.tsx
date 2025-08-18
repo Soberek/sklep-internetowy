@@ -8,12 +8,7 @@ type Props = {
   error: string | null;
 };
 
-const ProductList: React.FC<Props> = ({
-  category,
-  products,
-  loading,
-  error,
-}) => {
+const ProductList: React.FC<Props> = ({ category, products, loading, error }) => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
   if (!products || products.length === 0) return <div>No products found.</div>;
@@ -42,10 +37,7 @@ const ProductList: React.FC<Props> = ({
                 className="w-[176px] h-[176px] rounded-[12px] object-cover mb-2"
               />
               <div>
-                <p
-                  className="text-[16px] line-[24px] font-[500] text-[#1C0D0F]"
-                  style={{ letterSpacing: "0px" }}
-                >
+                <p className="text-[16px] line-[24px] font-[500] text-[#1C0D0F]" style={{ letterSpacing: "0px" }}>
                   {product.title}
                 </p>
                 <p

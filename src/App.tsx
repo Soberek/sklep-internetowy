@@ -23,11 +23,7 @@ const App: React.FC = () => {
     path: "products/category/smartphones?limit=6",
   });
 
-  const {
-    products: searchedProducts,
-    loading: searching,
-    error: searchError,
-  } = useSearchedProducts(searchTerm);
+  const { products: searchedProducts, loading: searching, error: searchError } = useSearchedProducts(searchTerm);
 
   return (
     <div className="min-h-screen bg-[#FFFFFF] max-w-[1280px] mx-auto">
@@ -37,27 +33,13 @@ const App: React.FC = () => {
         <div className="flex items-center justify-center gap-[16px]">
           {/* Logo icon container */}
           <div className="w-[16px] h-[16px] flex justify-center items-center">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M0 0H12L10 6L12 12H0L2 6L0 0Z"
-                fill="#1C0D0F"
-              />
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fillRule="evenodd" clipRule="evenodd" d="M0 0H12L10 6L12 12H0L2 6L0 0Z" fill="#1C0D0F" />
             </svg>
           </div>
 
           {/* Logo text */}
-          <h1
-            className="text-xl text-[18px] font-[700] text-[#1C0D0F]"
-            style={{ letterSpacing: "0px" }}
-          >
+          <h1 className="text-xl text-[18px] font-[700] text-[#1C0D0F]" style={{ letterSpacing: "0px" }}>
             ShopOnline
           </h1>
         </div>
